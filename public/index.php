@@ -34,6 +34,6 @@ if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? false) {
 
 $kernel = new Kernel($env, $debug);
 $request = Request::createFromGlobals();
-$response = $kernel->handle($request);
+    $response = $kernel->handle($request);
 $response->send();
 $kernel->terminate($request, $response);

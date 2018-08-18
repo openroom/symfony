@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+<style>
+    .lucky-number-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .lucky-number-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+    <div class="lucky-number-wrapper">
+        <p>
+            Your lucky number is {{ number }}.
+        </p>
+    </div>
+{% endblock %}
